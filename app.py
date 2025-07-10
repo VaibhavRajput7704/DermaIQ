@@ -139,11 +139,11 @@ elif app_mode == "Burn Detection":
         img_array = preprocess_image(image)
 
         if model_choice == "MobileNetV2":
-            model = tf.keras.models.load_model("burn_model_final_legacy_fixed.h5")
+            model = tf.keras.models.load_model("burn_model_final.h5")
             pred_class, confidence = predict_burn(model, image)
             last_conv_layer_name = "Conv_1"
         else:
-            model = tf.keras.models.load_model("burn_model_customcnn_functional_legacy_fixed.h5")
+            model = tf.keras.models.load_model("burn_model_customcnn_functional.h5")
             preds = model.predict(img_array)
             pred_class = int(np.argmax(preds))
             confidence = float(np.max(preds))
