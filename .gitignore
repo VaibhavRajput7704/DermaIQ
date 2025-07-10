@@ -1,4 +1,3 @@
 # Don't upload secrets and large files
 .env
 __pycache__/
-*.png
