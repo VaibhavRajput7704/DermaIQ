@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+numpy
+pandas
+matplotlib
+tensorflow
+keras
+scikit-learn
+opencv-python
+Pillow
+joblib
+protobuf
+requests
