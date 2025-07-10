@@ -1,7 +1,4 @@
 # Don't upload secrets and large files
 .env
 __pycache__/
-*.pkl
-*.h5
-*.npy
 *.png
